@@ -1,3 +1,12 @@
-.abc{
-    color:red;
+.main{
+    border: black solid 2px;
+    height:500px;
+    padding:50px;
+}
+
+.first{
+    border:red solid 2px;
+    height: 400px;
+    width: 600px;
+    margin-right: 10px;
 }

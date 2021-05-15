@@ -1,5 +1,14 @@
-<h1 class="abc">I am {{name}}</h1>
-<h1 class="abc">I have {{catcount}} cat</h1>
-<button (click)="addCat()">Add Cat</button>
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<div class="container main">
+    <div class="row">
+        <div class="col-md-6 first">
+            <ng-container *ngFor="let i of fruits1">
+                <app-new-card [info]="i" ></app-new-card></ng-container>
+        </div>
+        <div class="col-md-6">
+            <ng-container *ngFor="let i of fruits">
+                <app-cards [info]="i" (clickedElement)="xyz($event)"></app-cards></ng-container>
+          </div>
+    </div>
+</div>
 <router-outlet></router-outlet>
